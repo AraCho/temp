@@ -52,6 +52,7 @@ Adjusting __GoodMethod.cfg__ can change the belows.
 
 ### Output
 The directory __output_[base name]__ would be generated and all the output files would be located in this directory.
+![violin](Images/violin_chr10.jpg)
   1. __incidenceMatrix.csv__: the matrix of the presence/absence of the CNVs in individual single cells
   2. __pdf__: 
     1. Read-count distribution in CNV segments. (violin plot)
