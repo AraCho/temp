@@ -35,9 +35,11 @@ Adjusting __GoodMethod.cfg__ can change the belows.
   * __[directory for normal]__: path to directory which aligned bam files of __normal__ control single cells are in.  
     * example
   * __[.bed file for CNV segments]__: tab-delimited bed file of CNV segments from exom sequencing.
+  
       ```
       [chromosome]	[start]	[end]	[chromosome:start:end:CNV]
       ```
+      
       __Note: the 4th column of the file must have the exact same format with that of below.
         __ (__Amp__:amplification, __Del__:deletion)
     * example
