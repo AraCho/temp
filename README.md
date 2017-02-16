@@ -18,37 +18,37 @@ short description of GoodMethod
   * samtools
   * bedtools  
 
-
-### Input
-  1.  tab-delimited __bed__ file of CNV segments information from exom sequencing.    
-    ```
-   [chromosome]	[start]	[end]	[chromosome:start:end:CNV]
-   ```
-    __Note: the 4th column of the file must have the exact same format with that of below.__ (__Amp__:amplification, __Del__:deletion)
-
-  example
-	```
-	7   19533   157408385   7:19533:157408385:Amp
-	9   19116859    32405639    9:19116859:32405639:Del
-	```
-	
-  2.  alignment files (.bam) for single-cell RNA-seq of __tumor__ sample
-  3.  alignment files (.bam) for single-cell RNA-seq of __normal__ control
-
 ### Config file
 Adjusting __GoodMethod.cfg__ can change the belows.
   * Path to python/samtools/bedtools/Rscript
   * The threshold of mapping-qualities/read-count for alignment files
   * FDR for CNV calling
 
-
 ### Running
+
   ```
   cd ./GoodMethod/
-  bash run_GoodMethod.sh [directory_for_tumor] [directory_for_normal] [tab-delimited bed file for CNV segments information] [base name for output file]
+  bash run_GoodMethod.sh [directory_for_tumor] [directory_for_normal] [.bed file for CNV segments] [base name for output file]
   ```
   * __[directory for tumor]__: path to directory which aligned bam files of __tumor__ single cells are in.
+    * example: 
   * __[directory for normal]__: path to directory which aligned bam files of __normal__ control single cells are in.  
+    * example
+  * __[.bed file for CNV segments]__: tab-delimited bed file of CNV segments from exom sequencing.
+      ```
+      [chromosome]	[start]	[end]	[chromosome:start:end:CNV]
+      ```
+      __Note: the 4th column of the file must have the exact same format with that of below.
+        __ (__Amp__:amplification, __Del__:deletion)
+    * example
+  ```
+  7   19533   157408385   7:19533:157408385:Amp
+  9   19116859    32405639    9:19116859:32405639:Del
+  ```
+	
+  2.  alignment files (.bam) for single-cell RNA-seq of __tumor__ sample
+  3.  alignment files (.bam) for single-cell RNA-seq of __normal__ control
+
 
 ### Output
 The directory __output_[base name]__ would be generated and all the output files would be located in this directory.
