@@ -28,7 +28,7 @@ Adjusting __GoodMethod.cfg__ can change the belows.
 
   ```
   cd ./GoodMethod/
-  bash run_GoodMethod.sh [directory_for_tumor] [directory_for_normal] [.bed file for CNV segments] [base name for output file]
+  bash run_GoodMethod.sh [directory for tumor] [directory for normal] [.bed file for CNV segments] [base name]
   ```
   * __[directory for tumor]__: path to directory which aligned bam files of __tumor__ single cells are in.
     * example: 
@@ -45,10 +45,8 @@ Adjusting __GoodMethod.cfg__ can change the belows.
   7   19533   157408385   7:19533:157408385:Amp
   9   19116859    32405639    9:19116859:32405639:Del
   ```
-	
-  2.  alignment files (.bam) for single-cell RNA-seq of __tumor__ sample
-  3.  alignment files (.bam) for single-cell RNA-seq of __normal__ control
-
+  * __[base name]__ : base name for output directory
+  
 
 ### Output
 The directory __output_[base name]__ would be generated and all the output files would be located in this directory.
