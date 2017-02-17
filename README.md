@@ -73,20 +73,17 @@ Adjusting __Tree.cfg__ can change the belows.
   * Path to Rphylip
   
 ### Running
-
-  ```
-  bash 
-  ```
-### Output
-
   * Before running, the path to phylip need to be added in __Tree.cfg__ file.
 ```
-cd ./GoodMethod/
 bash run_Tree.sh [CNV presence/absence matrix][number of genotypes] [base name for output file]
 ```
   * __[CNV presence/absence matrix]__: .incidenceMatrix.csv files. Note that exclusion of non-malignent single cells from the matrix is recommended. 
-  * __[number of genotypes]__: the number of genotypes which are used for constructing trees by the aid of hierarchical clustering from the previous output files.  
+  * __[number of genotypes]__: the number of genotypes which are used for constructing trees by the aid of hierarchical clustering from the previous output files.
+  * __[base name]__ : base name for output directory
 
+### Output
+__[base name]_cluster.pdf__ (phylogenetic trees) would be generated in __output_[base name]__ directory. 
+![tree](images/Tree_tree.jpg?raw=true "tree" )
 
 ## <a id="CX_Net"></a> Generating co-expression network
 
