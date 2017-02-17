@@ -111,16 +111,14 @@ Adjusting __CorrelationNetwork.cfg__ can change the belows.
   ```
   
   * __[input matrix]__: tab-delimited file of the number of mapped reads to each gene in single cells. 
-    * example
-    ```
-    DDX11L1   1   11874   538   199   5   0
-    WASH7P    1   14362   4263   6541   223   45
-    ```
-
-  * __[centered gene]__: 
+  * __[centered gene]__: a target gene of which neighbor genes are analyzed.  
   * __[base name]__ : base name for output directory
 
 ### Output
+__[base name]_cluster.pdf__ (phylogenetic trees) would be generated in __output_[base name]__ directory. 
+![CXnet](images/.jpg?raw=true "CXnet" )
+
+
 
 ## <a id="Corr"></a> Correlation of scRNA-seq and exome-Seq
 The correlation between Exome-seq and single-cell RNA-seq could be assessed. 
