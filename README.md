@@ -101,7 +101,7 @@ The correlation between Exome-seq and single-cell RNA-seq could be assessed.
   * zoo (R package)
   
 ### Config file
-Adjusting __ CompareExomeSeq_vs_ScRNAseq.cfg__ can change the belows.
+Adjusting __CompareExomeSeq_vs_ScRNAseq.cfg__ can change the belows.
   * Path to Rscript
   * window size
   
@@ -110,7 +110,13 @@ Adjusting __ CompareExomeSeq_vs_ScRNAseq.cfg__ can change the belows.
   ```
   bash run_compareExomeSeq_vs_ScRNAseq.sh [matrix for read counts] [base name for output file]
   ```
-  * __[matrix for read counts]__: 
+  * __[matrix for read counts]__: tab-delimited file of the number of mapped reads to each gene in Exome-seq and single-cell RNA-seq
+  
+      ```
+      [gene]	[chromosome]	[start]	[#read in Exome-seq(normal)] [#read in Exome-seq(tumor)] [#read in scRNA-seq(normal)] [#read in scRNA-seq(tumor)]
+      ```
+
+
 
 ### Output
 
