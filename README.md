@@ -86,9 +86,24 @@ __[base name]_cluster.pdf__ (phylogenetic trees) would be generated in __output_
 ![tree](images/Tree_tree.jpg?raw=true "tree" )
 
 ## <a id="CX_Net"></a> Generating co-expression network
+Co-expression network could be constructed by the correlations of expressions in single cells.
+  
 
 ### Requirement
+  * scde, PCIT, boot, parallel, raster, flashClust (R package)
+  
 ### Config file
+Adjusting __CorrelationNetwork.cfg__ can change the belows.
+  * Path to Rscript
+  * ncore: Number of cores for computation  (default: 12)
+  * cor_threshold: Starting threshold for neighbour correlationof gene of interest (is decreased until at least x neighbours are found)(default: 0.9)
+  * min_neighbours: How many direct neighbours of gene of interest should be searched for (default: 20)
+  * minRawReads: How many raw reads should at least map to a gene to consider the gene (default: 100)
+  * percentCellsExpressing: Percentage (0.15 =15%) of cells expressing a gene to consider the gene (default: 0.15)
+  * minGenesExpr: #How many genes should be expressed at least in a cell to consider the cell (default: 800)
+  * depth: How deep should the gene analysis search. (2=only direct neighbor genes would be considered) (default: 2)
+
+
 ### Running
 
   ```
