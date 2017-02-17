@@ -30,9 +30,9 @@ Adjusting __GoodMethod.cfg__ can change the belows.
   bash run_GoodMethod.sh [directory for tumor] [directory for normal] [.bed file for CNV segments] [base name]
   ```
   * __[directory for tumor]__: path to directory which aligned bam files of __tumor__ single cells are in.
-    * example: 
+    
   * __[directory for normal]__: path to directory which aligned bam files of __normal__ control single cells are in.  
-    * example
+   
   * __[.bed file for CNV segments]__: tab-delimited bed file of CNV segments from exom sequencing.
   
       ```
