@@ -95,15 +95,26 @@ __[base name]_cluster.pdf__ (phylogenetic trees) would be generated in __output_
   ```
 ### Output
 
-## <a id="Corr"></a> Correlation of RNA-seq and exome-Seq
-
+## <a id="Corr"></a> Correlation of scRNA-seq and exome-Seq
+The correlation between Exome-seq and single-cell RNA-seq could be assessed. 
 ### Requirement
+  * zoo (R package)
+  
 ### Config file
+Adjusting __ CompareExomeSeq_vs_ScRNAseq.cfg__ can change the belows.
+  * Path to Rscript
+  * window size
+  
 ### Running
 
   ```
+  bash run_compareExomeSeq_vs_ScRNAseq.sh [matrix for read counts] [base name for output file]
   ```
+  * __[matrix for read counts]__: 
+
 ### Output
+
+
 
 ## <a id="10x"></a> False discovery rate estimation: 10x Cross validation
 
