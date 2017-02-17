@@ -131,13 +131,29 @@ __Compare_[window_size].pdf__ (Box plot) would be generated in __output_[base na
 
 
 ## <a id="10x"></a> False discovery rate estimation: 10x Cross validation
+The FDR could be estimated by 10x cross validation
 
 ### Requirement
+  * beanplot (R package)
+  * samtools
+  * bedtools  
+
+
 ### Config file
+Adjusting __10X_cross_validation.cfg__ can change the belows.
+  * Path to python/samtools/bedtools/Rscript
+  * The threshold of mapping-qualities/read-count for alignment files
+  * FDR for CNV calling
+
 ### Running
 
   ```
+  bash run_10X_cross_validation.sh [directory for test] [.bed files for CNV segments] [base name]
   ```
+  * __[directory for test]__: path to directory which aligned bam files of __testing__ for FDR estimation
+   
+  * __[.bed file for CNV segments], [base name]__ : same as above.
+
 ### Output
 
 ## <a id="Empirical"></a> False discovery rate estimation: Empirical testing
