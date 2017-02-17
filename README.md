@@ -141,12 +141,30 @@ __Compare_[window_size].pdf__ (Box plot) would be generated in __output_[base na
 ### Output
 
 ## <a id="Empirical"></a> False discovery rate estimation: Empirical testing
+The FDR could be estimated by empirical testing
 
 ### Requirement
+  * beanplot (R package)
+  * samtools
+  * bedtools  
+  
 ### Config file
+Adjusting __Empirical_validation.cfg__ can change the belows.
+  * Path to python/samtools/bedtools/Rscript
+  * The threshold of mapping-qualities/read-count for alignment files
+  * FDR for CNV calling
+
 ### Running
 
   ```
+  bash run_empirical_validation.sh [directory for train] [directory for test] [.bed files for CNV segments] [base name]
   ```
+
+  * __[directory for train]__: path to directory which aligned bam files for __training__ for FDR estimation
+    
+  * __[directory for test]__: path to directory which aligned bam files of __testing__ for FDR estimation
+   
+  * __[.bed file for CNV segments], [base name] __ : same as above.
+
 ### Output
 
