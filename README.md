@@ -115,8 +115,12 @@ Adjusting __CorrelationNetwork.cfg__ can change the belows.
   * __[base name]__ : base name for output directory
 
 ### Output
-__[base name]_cluster.pdf__ (phylogenetic trees) would be generated in __output_[base name]__ directory. 
-![CXnet](images/.jpg?raw=true "CXnet" )
+The directory __output_[base name]__ would be generated and all the output files would be located in this directory.
+  1. __[base name]_[correlstion_threshold]_[gene_name].txt__ : co-expression network
+  2. __[base name]_[gene_name]_corMat.rd__: Rdata of entire correlation
+  3. __[base name]_topCorrelations.pdf__: bar graph of top correlations. 
+  
+![CXnet](images/PTEN_topCorr.jpg?raw=true "CXnet" )
 
 
 
