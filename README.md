@@ -118,15 +118,16 @@ Adjusting __CompareExomeSeq_vs_ScRNAseq.cfg__ can change the belows.
     * example
   ```
   
-DDX11L1 1 11874   538 199 5   0
-WASH7P  1 14362 4263    6541    223 45
+DDX11L1   1   11874   538   199   5   0
+WASH7P    1   14362   4263   6541   223   45
   ```
   * __[base name]__ : base name for output directory
 
 
 
 ### Output
-
+__Compare_[window_size].pdf__ (Box plot) would be generated in __output_[base name]__ directory. 
+![compare](images/Compare_200.jpg?raw=true "compare" )
 
 
 ## <a id="10x"></a> False discovery rate estimation: 10x Cross validation
