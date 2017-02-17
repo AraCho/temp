@@ -100,14 +100,26 @@ Adjusting __CorrelationNetwork.cfg__ can change the belows.
   * min_neighbours: How many direct neighbours of gene of interest should be searched for (default: 20)
   * minRawReads: How many raw reads should at least map to a gene to consider the gene (default: 100)
   * percentCellsExpressing: Percentage (0.15 =15%) of cells expressing a gene to consider the gene (default: 0.15)
-  * minGenesExpr: #How many genes should be expressed at least in a cell to consider the cell (default: 800)
+  * minGenesExpr: How many genes should be expressed at least in a cell to consider the cell (default: 800)
   * depth: How deep should the gene analysis search. (2=only direct neighbor genes would be considered) (default: 2)
 
 
 ### Running
 
   ```
+  bash run_CorrelationNetwork.sh [input matrix] [centered gene] [base name]
   ```
+  
+  * __[input matrix]__: tab-delimited file of the number of mapped reads to each gene in single cells. 
+    * example
+    ```
+    DDX11L1   1   11874   538   199   5   0
+    WASH7P    1   14362   4263   6541   223   45
+    ```
+
+  * __[centered gene]__: 
+  * __[base name]__ : base name for output directory
+
 ### Output
 
 ## <a id="Corr"></a> Correlation of scRNA-seq and exome-Seq
