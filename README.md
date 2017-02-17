@@ -12,8 +12,7 @@ short description of GoodMethod
 
 ## <a id="Calling_CNV"></a> Calling presence/absence of CNVs
 ### Requirement
-  * Linux/Unix environment 
-  * Python
+  * Linux/Unix environment (Python/Perl)
   * beanplot (R packages)
   * samtools
   * bedtools  
@@ -52,12 +51,14 @@ Adjusting __GoodMethod.cfg__ can change the belows.
 
 ### Output
 The directory __output_[base name]__ would be generated and all the output files would be located in this directory.
-![violin](images/GoodMethod_violin.jpg?raw=true "violin" )
-![dendrogram](images/GoodMethod_dendrogram.jpg?raw=true "dendrogram" )
   1. __incidenceMatrix.csv__: the matrix of the presence/absence of the CNVs in individual single cells
   2. __pdf__: 
     1. Read-count distribution in CNV segments. (violin plot)
     2. Hierarchical clustering of the tumor single cells by the presence/absence of the CNVs.
+
+![violin](images/GoodMethod_violin.jpg?raw=true "violin" )
+![dendrogram](images/GoodMethod_dendrogram.jpg?raw=true "dendrogram" )
+
 
 ## <a id="Constructing_Tree"></a> Phylogenetic tree contruction
 ### Requirement
