@@ -113,8 +113,15 @@ Adjusting __CompareExomeSeq_vs_ScRNAseq.cfg__ can change the belows.
   * __[matrix for read counts]__: tab-delimited file of the number of mapped reads to each gene in Exome-seq and single-cell RNA-seq
   
       ```
-      [gene]	[chromosome]	[start]	[#read in Exome-seq(normal)] [#read in Exome-seq(tumor)] [#read in scRNA-seq(normal)] [#read in scRNA-seq(tumor)]
+      [gene] [chromosome] [start] [#read in Exome-seq(normal)] [#read in Exome-seq(tumor)] [#read in scRNA-seq(normal)] [#read in scRNA-seq(tumor)]
       ```
+    * example
+  ```
+  
+DDX11L1 1 11874   538 199 5   0
+WASH7P  1 14362 4263    6541    223 45
+  ```
+  * __[base name]__ : base name for output directory
 
 
 
