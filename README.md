@@ -155,6 +155,8 @@ Adjusting __10X_cross_validation.cfg__ can change the belows.
   * __[.bed file for CNV segments], [base name]__ : same as above.
 
 ### Output
+Box plot of FDRs would be generated (__[base name]_boxplot.pdf__) in  __output_[base name]__ directories.
+![10X](images/10X_boxplot.jpg?raw=true "10Xval_Test" )
 
 ## <a id="Empirical"></a> False discovery rate estimation: Empirical testing
 The FDR could be estimated by empirical testing
