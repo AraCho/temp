@@ -164,7 +164,7 @@ Adjusting __Empirical_validation.cfg__ can change the belows.
     
   * __[directory for test]__: path to directory which aligned bam files of __testing__ for FDR estimation
    
-  * __[.bed file for CNV segments], [base name] __ : same as above.
+  * __[.bed file for CNV segments], [base name]__ : same as above.
 
 ### Output
 Box plot of FDRs would be generated (__[base name]_boxplot.pdf__) in  __output_[base name]__ directories.
