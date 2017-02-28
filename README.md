@@ -1,5 +1,5 @@
-# GoodMethod
-short description of GoodMethod
+# phyngle
+PHYlogenies and co-expression networks for siNGLE cell data
 
 ## Table of contents
 - [Calling presence/absence of CNVs](#Calling_CNV)
