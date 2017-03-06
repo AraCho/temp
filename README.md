@@ -83,7 +83,16 @@ bash run_Tree.sh [CNV presence/absence matrix][number of genotypes] [base name f
 
 ### Output
 __[base name]_cluster.pdf__ (phylogenetic trees) would be generated in __output_[base name]__ directory. 
-![tree](images/Trees_cluster.jpg?raw=true "tree" )
+![tree](images/Trees_cluster.jpg?raw=true "tree" ) 
+
+```
+cluster_1  D12,E10,F9,G3,A12,C8,C9,A3,A5,A6,C3,C2,C1,C7,H12,C4,D8,D9,A9,E4,E7,E3,F1,E1,B5,B7,E9,B3,D7,D1
+cluster_2  E8,G7,G9,A7,G2,B6,E2
+cluster_3  H3,A2,A4,H8,G11,F2,F3,H1,H7
+cluster_4  A10,B2
+cluster_5  C5
+cluster_6  F8,B1
+```
 
 ## <a id="CX_Net"></a> Generating co-expression network
 Co-expression network could be constructed by the correlations of expressions in single cells.
